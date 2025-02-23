@@ -1,0 +1,31 @@
+{
+    "search_parameters": {
+        "required_terms": [
+            "Retrieval Augmented Generation"
+        ],
+        "or_terms": [],
+        "not_terms": [],
+        "start_year": null,
+        "end_year": null,
+        "last_n_years": 5,
+        "open_access_only": true,
+        "pdf_available_only": true,
+        "query": "(\"Retrieval Augmented Generation\")"
+    },
+    "analysis": {
+        "total_publications": 2,
+        "publications_per_year": {
+            "2024": 1,
+            "2023": 1
+        },
+        "frequent_publication_types": {
+            "JournalArticle": 2,
+            "Book": 1,
+            "Conference": 2
+        },
+        "frequent_journal_types": {
+            "2024 IEEE/ACM 3rd International Conference on AI Engineering – Software Engineering for AI (CAIN)": 1,
+            "ArXiv": 1
+        }
+    }
+}
