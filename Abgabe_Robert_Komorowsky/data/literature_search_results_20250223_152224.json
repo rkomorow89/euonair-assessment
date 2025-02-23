@@ -1,0 +1,42 @@
+[
+    {
+        "Title": "Seven Failure Points When Engineering a Retrieval Augmented Generation System",
+        "Authors": "Scott Barnett, Stefanus Kurniawan, Srikanth Thudumu, Zach Brannelly, Mohamed Abdelrazek",
+        "Year": 2024,
+        "DOI": "10.1145/3644815.3644945",
+        "URL": "https://www.semanticscholar.org/paper/ba454ba8c594dfb86c25dff2e265c8a2686aa037",
+        "Abstract": "Software engineers are increasingly adding semantic search capabilities to applications using a strategy known as Retrieval Augmented Generation (RAG). A RAG system involves finding documents that semantically match a query and then passing the documents to a large language model (LLM) such as ChatGPT to extract the right answer using an LLM. RAG systems aim to: a) reduce the problem of hallucinated responses from LLMs, b) link sources/references to generated responses, and c) remove the need for annotating documents with meta-data. However, RAG systems suffer from limitations inherent to information retrieval systems and from reliance on LLMs. In this paper, we present an experience report on the failure points of RAG systems from three case studies from separate domains: research, education, and biomedical. We share the lessons learned and present 7 failure points to consider when designing a RAG system. The two key takeaways arising from our work are: 1) validation of a RAG system is only feasible during operation, and 2) the robustness of a RAG system evolves rather than designed in at the start. We conclude with a list of potential research directions on RAG systems for the software engineering community.CCS CONCEPTS• Software and its engineering → Empirical software validation.",
+        "Citation Count": 54,
+        "Reference Count": 21,
+        "isOpenAccess": true,
+        "OpenAccessPDF": "https://dl.acm.org/doi/pdf/10.1145/3644815.3644945",
+        "PublicationTypes": "JournalArticle, Book, Conference",
+        "Journal": "2024 IEEE/ACM 3rd International Conference on AI Engineering – Software Engineering for AI (CAIN)",
+        "TLDR": "This paper presents an experience report on the failure points of RAG systems from three case studies from separate domains: research, education, and biomedical, and presents 7 failure points to consider when designing a RAG system.",
+        "AI_analysis": {
+            "Research Question": "The research question of the paper is: \"What are the key considerations when engineering a RAG system?\" and \"What are the failure points that occur when engineering a RAG system?\"",
+            "Objective": "The objective of this paper is twofold:\n\n1. To provide a comprehensive reference guide for practitioners working with Retrieval Augmented Generation (RAG) systems. It aims to offer insights into the challenges and potential issues that engineers may encounter when implementing RAG systems, thereby assisting them in creating more robust and reliable systems.\n\n2. To present a research roadmap for RAG systems, highlighting the key areas that require further investigation. This includes topics such as chunking and embeddings, the comparison between RAG and fine-tuning, and the testing and monitoring of RAG systems. The paper aims to contribute to the advancement of RAG technology by identifying these research directions.",
+            "Contribution": "The main contributions of the paper are:\n- A comprehensive catalog of failure points (FP) that occur in Retrieval-Augmented Generation (RAG) systems, which can serve as a reference for practitioners to avoid common pitfalls.\n- An experience report from three case studies of implementing a RAG system, with two currently running at Deakin University, providing practical insights and lessons learned.\n- A research roadmap for RAG systems, including future directions related to chunking and embeddings, RAG versus fine-tuning, and testing and monitoring. This is based on the challenges and insights gained from the case studies."
+        }
+    },
+    {
+        "Title": "Active Retrieval Augmented Generation",
+        "Authors": "Zhengbao Jiang, Frank F. Xu, Luyu Gao, Zhiqing Sun, Qian Liu, Jane Dwivedi-Yu, Yiming Yang, Jamie Callan, Graham Neubig",
+        "Year": 2023,
+        "DOI": "10.48550/arXiv.2305.06983",
+        "URL": "https://www.semanticscholar.org/paper/88884b8806262a4095036041e3567d450dba39f7",
+        "Abstract": "Despite the remarkable ability of large language models (LMs) to comprehend and generate language, they have a tendency to hallucinate and create factually inaccurate output. Augmenting LMs by retrieving information from external knowledge resources is one promising solution. Most existing retrieval augmented LMs employ a retrieve-and-generate setup that only retrieves information once based on the input. This is limiting, however, in more general scenarios involving generation of long texts, where continually gathering information throughout generation is essential. In this work, we provide a generalized view of active retrieval augmented generation, methods that actively decide when and what to retrieve across the course of the generation. We propose Forward-Looking Active REtrieval augmented generation (FLARE), a generic method which iteratively uses a prediction of the upcoming sentence to anticipate future content, which is then utilized as a query to retrieve relevant documents to regenerate the sentence if it contains low-confidence tokens. We test FLARE along with baselines comprehensively over 4 long-form knowledge-intensive generation tasks/datasets. FLARE achieves superior or competitive performance on all tasks, demonstrating the effectiveness of our method. Code and datasets are available at https://github.com/jzbjyb/FLARE.",
+        "Citation Count": 188,
+        "Reference Count": 78,
+        "isOpenAccess": true,
+        "OpenAccessPDF": "http://arxiv.org/pdf/2305.06983",
+        "PublicationTypes": "JournalArticle, Conference",
+        "Journal": "ArXiv",
+        "TLDR": "This work proposes Forward-Looking Active REtrieval augmented generation (FLARE), a generic method which iteratively uses a prediction of the upcoming sentence to anticipate future content, which is then utilized as a query to retrieve relevant documents to regenerate the sentence if it contains low-confidence tokens.",
+        "AI_analysis": {
+            "Research Question": "The research question of the paper is not explicitly stated, but it appears to be focused on developing methods to improve question-answering systems, particularly in handling ambiguous questions and low-confidence spans. The paper explores various techniques, such as generating explicit questions, using chain-of-thought reasoning, and employing universal approaches to enhance the accuracy and interpretability of question-answering models.",
+            "Objective": "The primary objective of this paper is to introduce a novel approach called Forward-Looking Active Retrieval Augmented Generation (FLARE) for language models (LMs). FLARE aims to improve the generation process by actively retrieving relevant information at different stages, similar to how humans gather knowledge while creating content. The method focuses on enhancing the quality and relevance of generated text, especially in tasks that require multi-hop reasoning and open-domain summarization.",
+            "Contribution": "The main contribution of this paper is the introduction of FLARE (Forward-Looking Active Retrieval Augmented Generation), a novel approach to long-form generation with Language Models (LMs). FLARE aims to improve the quality of generated content by actively retrieving relevant information during the generation process, similar to how humans gather knowledge when creating written content. This method addresses the challenge of generating comprehensive and coherent long-form text by ensuring that the model has access to the necessary information at each step of the generation. \n\nThe paper also presents an evaluation of FLARE on various tasks, including open-domain question answering, commonsense reasoning, and multi-document summarization, demonstrating its effectiveness and versatility. The authors provide experimental settings, dataset statistics, and retrieval settings for each task, offering a comprehensive understanding of FLARE's performance."
+        }
+    }
+]
